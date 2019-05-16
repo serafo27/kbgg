@@ -1,0 +1,8 @@
+language: kotlin
+install: true
+
+jdk:
+  - oraclejdk8
+
+script:
+  - ./gradlew build
