@@ -1,0 +1,6 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="kbgg-lib">
+    <output-path>$PROJECT_DIR$/out/artifacts/kbgg_lib</output-path>
+    <root id="archive" name="kbgg-lib.jar" />
+  </artifact>
+</component>
