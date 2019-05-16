@@ -10,6 +10,10 @@ repositories {
     mavenCentral()
 }
 
+wrapper {
+    gradleVersion = '5.4.1'
+}
+
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
     implementation 'com.squareup.retrofit2:retrofit:2.5.0'
