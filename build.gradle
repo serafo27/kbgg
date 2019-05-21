@@ -1,10 +1,17 @@
 plugins {
     id 'org.jetbrains.kotlin.jvm' version '1.3.31'
     id 'com.gradle.build-scan' version '2.1'
+}
 
-    id 'signing'
-    id 'java-library'
-    id 'maven-publish'
+group 'it.heptartle'
+version '1.0.2'
+
+repositories {
+    mavenCentral()
+}
+
+wrapper {
+    gradleVersion = '5.4.1'
 }
 
 dependencies {
@@ -22,89 +29,4 @@ compileKotlin {
 }
 compileTestKotlin {
     kotlinOptions.jvmTarget = "1.8"
-}
-
-
-
-// Building
-apply plugin: 'java'
-repositories {
-    mavenCentral()
-}
-
-
-// Signing
-apply plugin: 'signing'
-signing {
-    sign configurations.archives
-}
-
-
-// Deploying
-apply plugin: 'maven'
-
-// Add Javadoc JAR and sources JAR to artifact
-task javadocJar(type: Jar) {
-    classifier = 'javadoc'
-    from javadoc
-}
-task sourcesJar(type: Jar) {
-    classifier = 'sources'
-    from sourceSets.main.allSource
-}
-artifacts {
-    archives javadocJar, sourcesJar
-}
-
-// Configure group ID, artifact ID, and version
-group = "io.github.serafo27"
-archivesBaseName = "kbgg"
-version = "1.0.2"
-
-// Build, sign, and upload
-uploadArchives {
-    repositories {
-        mavenDeployer {
-
-            // Sign POM
-            beforeDeployment { MavenDeployment deployment -> signing.signPom(deployment) }
-
-            // Destination
-            repository(url: "https://oss.sonatype.org/service/local/staging/deploy/maven2/") {
-                authentication(userName: ossrhUsername, password: ossrhPassword)
-            }
-            snapshotRepository(url: "https://oss.sonatype.org/content/repositories/snapshots/") {
-                authentication(userName: ossrhUsername, password: ossrhPassword)
-            }
-
-            // Add required metadata to POM
-            pom.project {
-                name 'kbgg'
-                packaging 'jar'
-                url 'https://github.com/serafo27/kbgg'
-                description 'A Java library for bgg xml api'
-
-                scm {
-                    connection 'scm:git:git://github.com/serafo27/kbgg.git'
-                    developerConnection 'scm:git:ssh://github.com/serafo27/kbgg.git'
-                    url 'http://github.com/serafo27/kbgg/tree/master'
-                }
-
-                licenses {
-                    license {
-                        name 'MIT License'
-                        url 'https://opensource.org/licenses/MIT'
-                    }
-                }
-
-                developers {
-                    developer {
-                        id 'serafo27'
-                        name 'Serafino D\'Angelillo'
-                        organizationUrl 'http://www.serafinodangelillo.it/'
-                    }
-                }
-            }
-        }
-    }
 }
