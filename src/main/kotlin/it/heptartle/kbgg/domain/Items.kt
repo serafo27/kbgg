@@ -1,9 +1,6 @@
 package it.heptartle.kbgg.domain
 
-import org.simpleframework.xml.Attribute
-import org.simpleframework.xml.Element
-import org.simpleframework.xml.ElementList
-import org.simpleframework.xml.Root
+import org.simpleframework.xml.*
 
 @Root(name = "items")
 class Items {
@@ -15,41 +12,10 @@ class Items {
 
     @field:Attribute(required = false)
     var total: Int? = null
-
-    override fun toString(): String = "it.heptartle.kbgg.domain.Items(items=$items, termsofuse='$termsofuse', total='$total')"
-
-    override fun equals(other: Any?): Boolean {
-        if (this === other) return true
-        if (javaClass != other?.javaClass) return false
-
-        other as Items
-
-        if (items != other.items) return false
-        if (termsofuse != other.termsofuse) return false
-        if (total != other.total) return false
-
-        return true
-    }
-
-    override fun hashCode(): Int {
-        var result = items?.hashCode() ?: 0
-        result = 31 * result + termsofuse.hashCode()
-        result = 31 * result + (total ?: 0)
-        return result
-    }
 }
 
 @Root(name = "item")
 class Item {
-
-    @field:Element(required = false)
-    var thumbnail: Thumbnail? = null
-
-    @field:Element
-    var name: Name = Name()
-
-    @field:Element(required = false)
-    var yearpublished: YearPublished? = null
 
     @field:Attribute
     var id: Int = 0
@@ -60,35 +26,139 @@ class Item {
     @field:Attribute(required = false)
     var rank: Int? = null
 
-    override fun toString(): String {
-        return "Item(thumbnail=$thumbnail, name=$name, yearpublished=$yearpublished, id=$id, type=$type, rank=$rank)"
-    }
+    @field:Element(required = false)
+    var thumbnail: Thumbnail? = null
 
-    override fun equals(other: Any?): Boolean {
-        if (this === other) return true
-        if (javaClass != other?.javaClass) return false
+    @field:ElementList(name = "name", inline = true, required = false)
+    var names: List<Name>? = null
 
-        other as Item
+    @field:Element(required = false)
+    var yearpublished: YearPublished? = null
 
-        if (thumbnail != other.thumbnail) return false
-        if (name != other.name) return false
-        if (yearpublished != other.yearpublished) return false
-        if (id != other.id) return false
-        if (type != other.type) return false
-        if (rank != other.rank) return false
+    @field:Element(required = false)
+    var image: Image? = null
 
-        return true
-    }
+    @field:Element(required = false)
+    var description: String? = null
 
-    override fun hashCode(): Int {
-        var result = thumbnail?.hashCode() ?: 0
-        result = 31 * result + name.hashCode()
-        result = 31 * result + (yearpublished?.hashCode() ?: 0)
-        result = 31 * result + id
-        result = 31 * result + (type?.hashCode() ?: 0)
-        result = 31 * result + (rank ?: 0)
-        return result
-    }
+    @field:Element(required = false)
+    var minplayers: MinPlayers? = null
+
+    @field:Element(required = false)
+    var maxplayers: MaxPlayers? = null
+
+    @field:Element(required = false)
+    var playingtime: PlayingTime? = null
+
+    @field:Element(required = false)
+    var minplaytime: MinPlayTime? = null
+
+    @field:Element(required = false)
+    var maxplaytime: MaxPlayTime? = null
+
+    @field:Element(required = false)
+    var minage: MinAge? = null
+
+    @field:ElementList(name = "poll", inline = true, required = false)
+    var polls: List<Poll>? = null
+
+    @field:ElementList(name = "link", inline = true, required = false)
+    var links: List<Link>? = null
+}
+
+@Root(name = "link")
+class Link {
+
+    @field:Attribute
+    var type: String = ""
+
+    @field:Attribute
+    var id: Int = 0
+
+    @field:Attribute
+    var value: String = ""
+}
+
+@Root(name = "minplayes")
+class MinPlayers {
+
+    @field:Attribute
+    var value: String = ""
+}
+
+@Root(name = "maxplayes")
+class MaxPlayers {
+
+    @field:Attribute
+    var value: String = ""
+}
+
+@Root(name = "playingtime")
+class PlayingTime {
+
+    @field:Attribute
+    var value: String = ""
+}
+
+@Root(name = "minplaytime")
+class MinPlayTime {
+
+    @field:Attribute
+    var value: String = ""
+}
+
+@Root(name = "maxplaytime")
+class MaxPlayTime {
+
+    @field:Attribute
+    var value: String = ""
+}
+
+@Root(name = "minage")
+class MinAge {
+
+    @field:Attribute
+    var value: String = ""
+}
+
+@Root(name = "poll")
+class Poll {
+
+    @field:Attribute
+    var name: String = ""
+
+    @field:Attribute
+    var title: String = ""
+
+    @field:Attribute
+    var totalvotes: Int = 0
+
+    @field:ElementList(name = "results", inline = true, required = false)
+    var resultsList: List<Results>? = null
+}
+
+@Root(name = "results")
+class Results {
+
+    @field:Attribute(required = false)
+    var numplayers: String? = null
+
+    @field:ElementList(name = "result", inline = true, required = false)
+    var results: List<Result>? = null
+
+}
+
+@Root(name = "result")
+class Result {
+
+    @field:Attribute
+    var value: String = ""
+
+    @field:Attribute
+    var numvotes: Int = 0
+
+    @field:Attribute(required = false)
+    var level: Int? = null
 }
 
 
@@ -100,77 +170,31 @@ class Name {
     @field:Attribute(required = false)
     var type: String? = null
 
-    override fun toString(): String {
-        return "Name(value='$value', type=$type)"
-    }
+    @field:Attribute(required = false)
+    var sortindex: String? = null
 
-    override fun equals(other: Any?): Boolean {
-        if (this === other) return true
-        if (javaClass != other?.javaClass) return false
+}
 
-        other as Name
+@Root(name = "image")
+class Image {
 
-        if (value != other.value) return false
-        if (type != other.type) return false
-
-        return true
-    }
-
-    override fun hashCode(): Int {
-        var result = value.hashCode()
-        result = 31 * result + (type?.hashCode() ?: 0)
-        return result
-    }
+    @field:Text
+    var text: String = ""
 }
 
 @Root(name = "thumbnail")
 class Thumbnail {
-    @field:Attribute
-    var value: String = ""
+    @field:Attribute(required = false)
+    var value: String? = null
 
-    override fun toString(): String {
-        return "Thumbnail(value='$value')"
-    }
-
-    override fun equals(other: Any?): Boolean {
-        if (this === other) return true
-        if (javaClass != other?.javaClass) return false
-
-        other as Thumbnail
-
-        if (value != other.value) return false
-
-        return true
-    }
-
-    override fun hashCode(): Int {
-        return value.hashCode()
-    }
+    @field:Text(required = false)
+    var text: String? = null
 }
 
 @Root(name = "yearpublished")
 class YearPublished {
     @field:Attribute
     var value: String = ""
-
-    override fun toString(): String {
-        return "YearPublished(value='$value')"
-    }
-
-    override fun equals(other: Any?): Boolean {
-        if (this === other) return true
-        if (javaClass != other?.javaClass) return false
-
-        other as YearPublished
-
-        if (value != other.value) return false
-
-        return true
-    }
-
-    override fun hashCode(): Int {
-        return value.hashCode()
-    }
 }
 
 enum class Type(val value: String) {

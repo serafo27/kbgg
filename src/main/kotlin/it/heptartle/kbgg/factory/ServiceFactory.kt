@@ -1,9 +1,10 @@
 package it.heptartle.kbgg.factory
 
+import com.google.gson.GsonBuilder
 import it.heptartle.kbgg.api.ImagesApi
 import it.heptartle.kbgg.api.ItemsApi
 import it.heptartle.kbgg.api.SearchApi
-import com.google.gson.GsonBuilder
+import it.heptartle.kbgg.api.ThingApi
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
@@ -20,9 +21,12 @@ object ServiceFactory {
     fun getItemsService():ItemsApi =
         bggService.create(ItemsApi::class.java)
 
+    fun getThingService(): ThingApi =
+        bggService.create(ThingApi::class.java)
+
     private val geekdoService: Retrofit =
          Retrofit.Builder()
-            .baseUrl("https://it.heptartle.kbgg.api.geekdo.com/it.heptartle.kbgg.api/")
+             .baseUrl("https://api.geekdo.com/api/")
             .client(OkHttpClient())
             .addConverterFactory(GsonConverterFactory.create(
                 GsonBuilder()

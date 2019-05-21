@@ -12,17 +12,23 @@ class ImagesApiTest {
 
         val response = service.getImages(177736, pageid = 1, showcount = 1).execute().body()
         checkNotNull(response)
-        assertEquals(response.images.size, 1)
-        assertEquals(response.images[0].caption, "Korean edition box art")
-        assertEquals(response.images[0].imageid, "4736584")
-        assertEquals(response.images[0].imageurl, "https://cf.geekdo-images.com/thumb/img/aF6vg1D8pcX5yCA5jwjLVUj3hFo=/fit-in/200x150/pic4736584.png")
-        assertEquals(response.images[0].imageurl_lg, "https://cf.geekdo-images.com/large/img/m2BKlMu9c0TufxxNJrelysEsldI=/fit-in/1024x1024/filters:no_upscale()/pic4736584.png")
-        assertEquals(response.images[0].name, null)
-        assertEquals(response.images[0].numcomments, "0")
-        assertEquals(response.images[0].numrecommend, "1")
-        assertEquals(response.images[0].user.avatar, "1")
-        assertEquals(response.images[0].user.avatarfile, "avatar_id134692.jpg")
-        assertEquals(response.images[0].user.username, "JoshYongguk")
+        assertEquals(1, response.images.size)
+        assertEquals("A Feast For Odin with my Jarl-sized drinking horn!", response.images[0].caption)
+        assertEquals("4753737", response.images[0].imageid)
+        assertEquals(
+            "https://cf.geekdo-images.com/thumb/img/mS3w8X-1l81uniARy7TaG5CnzZg=/fit-in/200x150/pic4753737.jpg",
+            response.images[0].imageurl
+        )
+        assertEquals(
+            "https://cf.geekdo-images.com/large/img/sq7YeZKCQgajrhWg2QovuDcimes=/fit-in/1024x1024/filters:no_upscale()/pic4753737.jpg",
+            response.images[0].imageurl_lg
+        )
+        assertEquals(null, response.images[0].name)
+        assertEquals("0", response.images[0].numcomments)
+        assertEquals("1", response.images[0].numrecommend)
+        assertEquals("0", response.images[0].user.avatar)
+        assertEquals("", response.images[0].user.avatarfile)
+        assertEquals("Razor88", response.images[0].user.username)
 
     }
 }

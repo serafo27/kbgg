@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="_io.github.serafo27.kbgg.main" target="1.8" />
+      <module name="_io.github.serafo27.kbgg.test" target="1.8" />
+      <module name="it.heptar.kbgg.main" target="1.8" />
+      <module name="it.heptar.kbgg.test" target="1.8" />
+      <module name="it.heptartle.kbgg.main" target="1.8" />
+      <module name="it.heptartle.kbgg.test" target="1.8" />
+      <module name="net.weibeld.rabbitmq.kbgg.main" target="1.8" />
+      <module name="net.weibeld.rabbitmq.kbgg.test" target="1.8" />
+      <module name="org.example.kbgg.main" target="1.8" />
+      <module name="org.example.kbgg.test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

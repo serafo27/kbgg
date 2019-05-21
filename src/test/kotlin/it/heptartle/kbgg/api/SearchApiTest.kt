@@ -1,8 +1,6 @@
 package it.heptartle.kbgg.api
 
-import it.heptartle.kbgg.domain.Name
 import it.heptartle.kbgg.domain.Type
-import it.heptartle.kbgg.domain.YearPublished
 import it.heptartle.kbgg.factory.ServiceFactory
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Assertions.assertNotEquals
@@ -17,27 +15,14 @@ class SearchApiTest {
 
         val response = service.search("a feast for odin").execute().body()
         checkNotNull(response)
-        assertEquals(response.total, 7)
-        assertNotEquals(response.items, 0)
-        assertEquals(response.items!![0].id, 177736)
-        assertEquals(response.items!![0].name, getName())
-        assertEquals(response.items!![0].rank, null)
-        assertEquals(response.items!![0].type, Type.BOARDGAME.value)
-        assertEquals(response.items!![0].thumbnail, null)
-        assertEquals(response.items!![0].yearpublished, getYearPublished())
+        assertEquals(7, response.total)
+        assertNotEquals(0, response.items)
+        assertEquals(177736, response.items!![0].id)
+        assertEquals("A Feast for Odin", response.items!![0].names!![0].value)
+        assertEquals(null, response.items!![0].rank)
+        assertEquals(Type.BOARDGAME.value, response.items!![0].type)
+        assertEquals(null, response.items!![0].thumbnail)
+        assertEquals("2016", response.items!![0].yearpublished!!.value)
     }
 
-
-    private fun getName(): Name {
-        val name = Name()
-        name.value = "A Feast for Odin"
-        name.type = "primary"
-        return name
-    }
-
-    private fun getYearPublished(): YearPublished {
-        val yearPublished = YearPublished()
-        yearPublished.value = "2016"
-        return yearPublished
-    }
 }
