@@ -207,7 +207,7 @@ class Rank {
     var friendlyname: String = ""
 
     @field:Attribute
-    var value: Int = 0
+    var value: String = ""
 
     @field:Attribute
     var bayesaverage: String = ""
