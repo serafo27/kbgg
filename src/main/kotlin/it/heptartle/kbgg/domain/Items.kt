@@ -226,8 +226,8 @@ class Link {
     @field:Attribute
     var value: String = ""
 
-    @field:Attribute
-    var inbound: String = ""
+    @field:Attribute(required = false)
+    var inbound: String?  = null
 }
 
 
