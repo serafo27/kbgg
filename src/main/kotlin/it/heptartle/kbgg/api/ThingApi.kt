@@ -9,7 +9,8 @@ interface ThingApi {
 
     @GET("thing")
     fun getThing(@Query("id") thingId: Int,
-                 @Query("stats") stats: Int = 0
+                 @Query("stats") stats: Int = 0,
+                 @Query("videos") videos: Int = 0
     ): Call<Items>
 
 }

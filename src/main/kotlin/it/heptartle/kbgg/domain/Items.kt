@@ -74,7 +74,49 @@ class Item {
     var links: List<Link>? = null
 
     @field:Element(required = false)
+    var videos: Videos? = null
+
+    @field:Element(required = false)
     var statistics: Statistics? = null
+
+}
+
+@Root(name = "videos")
+class Videos {
+
+    @field:ElementList(name = "video", inline = true, required = false)
+    var videoList: List<Video>? = null
+
+    @field:Attribute
+    var total: Int = 0
+}
+
+@Root(name = "video")
+class Video {
+
+    @field:Attribute
+    var id: Int = 0
+
+    @field:Attribute
+    var title: String = ""
+
+    @field:Attribute
+    var category: String = ""
+
+    @field:Attribute
+    var language: String = ""
+
+    @field:Attribute
+    var link: String = ""
+
+    @field:Attribute
+    var username: String = ""
+
+    @field:Attribute
+    var userid: Int = 0
+
+    @field:Attribute
+    var postdate: String = ""
 }
 
 @Root(name = "statistics")

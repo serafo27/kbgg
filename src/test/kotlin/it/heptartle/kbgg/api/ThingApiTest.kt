@@ -19,4 +19,10 @@ class ThingApiTest {
         checkNotNull(response)
     }
 
+    @Test
+    fun retrieveThingWithVideos() {
+        val response = service.getThing(245934, videos = 1).execute().body()
+        checkNotNull(response)
+    }
+
 }

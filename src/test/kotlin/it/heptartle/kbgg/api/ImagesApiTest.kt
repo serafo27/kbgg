@@ -25,9 +25,9 @@ class ImagesApiTest {
         )
         assertEquals(null, response.images[0].name)
         assertEquals("0", response.images[0].numcomments)
-        assertEquals("1", response.images[0].numrecommend)
-        assertEquals("0", response.images[0].user.avatar)
-        assertEquals("", response.images[0].user.avatarfile)
+        assertEquals("2", response.images[0].numrecommend)
+        assertEquals("1", response.images[0].user.avatar)
+        assertEquals("avatar_id135626.jpg", response.images[0].user.avatarfile)
         assertEquals("Razor88", response.images[0].user.username)
 
     }
