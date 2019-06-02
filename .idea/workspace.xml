@@ -8,11 +8,8 @@
   <component name="ChangeListManager">
     <list default="true" id="31bf290e-e88e-4365-8723-024b31fafe37" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/api/SearchApi.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/api/SearchApi.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/api/ThingApi.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/api/ThingApi.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/domain/Items.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/domain/Items.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/it/heptartle/kbgg/api/SearchApiTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/it/heptartle/kbgg/api/SearchApiTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/it/heptartle/kbgg/api/ThingApiTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/it/heptartle/kbgg/api/ThingApiTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build_release.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build_release.gradle" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -78,11 +75,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/kotlin/it/heptartle/kbgg/api/ThingApiTest.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="254">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="391">
+              <caret line="23" column="58" selection-start-line="23" selection-start-column="58" selection-end-line="23" selection-end-column="58" />
               <folding>
                 <element signature="e#31#112#0" expanded="true" />
               </folding>
@@ -90,32 +96,38 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/kotlin/it/heptartle/kbgg/api/ImagesApiTest.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="22" column="56" selection-start-line="22" selection-start-column="56" selection-end-line="22" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build_release.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="489">
+              <caret line="61" column="16" selection-start-line="61" selection-start-column="16" selection-end-line="61" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/api/ThingApi.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="12" column="40" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/domain/Items.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2533">
-              <caret line="149" selection-start-line="149" selection-end-line="149" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/kotlin/it/heptartle/kbgg/api/SearchApiTest.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="24" column="62" selection-start-line="24" selection-start-column="62" selection-end-line="24" selection-end-column="62" />
-              <folding>
-                <element signature="e#31#258#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.simpleframework/simple-xml/2.7.1/2a949576bb8da7514024dc0b84efeeb2fc902a0/simple-xml-2.7.1-sources.jar!/org/simpleframework/xml/Path.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="40">
-              <caret line="101" column="18" selection-start-line="101" selection-start-column="18" selection-end-line="101" selection-end-column="18" />
+            <state relative-caret-position="1598">
+              <caret line="94" column="11" selection-start-line="94" selection-start-column="6" selection-end-line="94" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -183,14 +195,14 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/test/kotlin/it/heptartle/kbgg/api/ItemsApiTest.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/factory/ServiceFactory.kt" />
-        <option value="$PROJECT_DIR$/src/test/kotlin/it/heptartle/kbgg/api/ImagesApiTest.kt" />
-        <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/build_release.gradle" />
         <option value="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/api/SearchApi.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/api/ThingApi.kt" />
-        <option value="$PROJECT_DIR$/src/test/kotlin/it/heptartle/kbgg/api/ThingApiTest.kt" />
         <option value="$PROJECT_DIR$/src/test/kotlin/it/heptartle/kbgg/api/SearchApiTest.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/api/ThingApi.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/domain/Items.kt" />
+        <option value="$PROJECT_DIR$/src/test/kotlin/it/heptartle/kbgg/api/ThingApiTest.kt" />
+        <option value="$PROJECT_DIR$/src/test/kotlin/it/heptartle/kbgg/api/ImagesApiTest.kt" />
+        <option value="$PROJECT_DIR$/build_release.gradle" />
+        <option value="$PROJECT_DIR$/build.gradle" />
       </list>
     </option>
   </component>
@@ -326,7 +338,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ThingApiTest.retrieveThingWithStatistics">
+  <component name="RunManager" selected="JUnit.All in kbgg.test">
     <configuration default="true" type="AndroidJUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -407,10 +419,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ThingApiTest.retrieveThingWithStatistics" />
-        <item itemvalue="JUnit.ThingApiTest" />
-        <item itemvalue="JUnit.ImagesApiTest.retrieveImage" />
         <item itemvalue="JUnit.All in kbgg.test" />
+        <item itemvalue="JUnit.ThingApiTest" />
+        <item itemvalue="JUnit.ThingApiTest.retrieveThingWithStatistics" />
+        <item itemvalue="JUnit.ImagesApiTest.retrieveImage" />
         <item itemvalue="JUnit.SearchApiTest.name" />
       </list>
     </recent_temporary>
@@ -475,25 +487,24 @@
       <option name="project" value="LOCAL" />
       <updated>1558464839086</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Changed the single element value representation and added new Statistics element in the Items element">
+      <created>1559481496533</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1559481496533</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Added new Videos element in the Items element">
+      <created>1559481984193</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1559481984193</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ThingApiTest_retrieveThingWithStatistics - 2019.06.02 at 15h 09m 50s.xml">
-      <configuration name="ThingApiTest.retrieveThingWithStatistics" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ThingApiTest_retrieveThingWithStatistics - 2019.06.02 at 15h 10m 26s.xml">
-      <configuration name="ThingApiTest.retrieveThingWithStatistics" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ThingApiTest_retrieveThingWithStatistics - 2019.06.02 at 15h 11m 00s.xml">
-      <configuration name="ThingApiTest.retrieveThingWithStatistics" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ThingApiTest_retrieveThingWithStatistics - 2019.06.02 at 15h 12m 20s.xml">
-      <configuration name="ThingApiTest.retrieveThingWithStatistics" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ThingApiTest_retrieveThingWithStatistics - 2019.06.02 at 15h 12m 32s.xml">
-      <configuration name="ThingApiTest.retrieveThingWithStatistics" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ThingApiTest_retrieveThingWithStatistics - 2019.06.02 at 15h 12m 42s.xml">
       <configuration name="ThingApiTest.retrieveThingWithStatistics" configurationId="JUnit" />
     </history-entry>
@@ -509,15 +520,30 @@
     <history-entry file="ThingApiTest_retrieveThingWithStatistics - 2019.06.02 at 15h 16m 58s.xml">
       <configuration name="ThingApiTest.retrieveThingWithStatistics" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ThingApiTest - 2019.06.02 at 15h 25m 04s.xml">
+      <configuration name="ThingApiTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_kbgg_test - 2019.06.02 at 15h 25m 12s.xml">
+      <configuration name="All in kbgg.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_kbgg_test - 2019.06.02 at 15h 25m 35s.xml">
+      <configuration name="All in kbgg.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_kbgg_test - 2019.06.02 at 15h 25m 51s.xml">
+      <configuration name="All in kbgg.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_kbgg_test - 2019.06.02 at 15h 26m 05s.xml">
+      <configuration name="All in kbgg.test" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52266000" />
+    <option name="totallyTimeSpent" value="52855000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="826" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16309012" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16309012" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -526,7 +552,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32911393" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.35831064" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.35831064" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39918256" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -555,9 +581,13 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="changed settings" />
     <MESSAGE value="changed version" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed version" />
+    <MESSAGE value="Changed the single element value representation and added new Statistics element in the Items element" />
+    <MESSAGE value="Added new Videos element in the Items element" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added new Videos element in the Items element" />
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/converter-simplexml/2.5.0/4eb7c95d0b6801169e74e6e8e93a98d1ac53c11d/converter-simplexml-2.5.0-sources.jar!/retrofit2/converter/simplexml/SimpleXmlConverterFactory.java">
@@ -654,13 +684,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="26" selection-start-column="26" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -765,20 +788,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/kotlin/it/heptartle/kbgg/api/ImagesApiTest.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="30" column="29" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build_release.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="489">
-          <caret line="61" column="16" selection-start-line="61" selection-start-column="16" selection-end-line="61" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/api/SearchApi.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -807,23 +816,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/api/ThingApi.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/kotlin/it/heptartle/kbgg/api/ThingApiTest.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="e#31#112#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.simpleframework/simple-xml/2.7.1/2a949576bb8da7514024dc0b84efeeb2fc902a0/simple-xml-2.7.1-sources.jar!/org/simpleframework/xml/Path.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="40">
@@ -843,8 +835,46 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/domain/Items.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2533">
-          <caret line="149" selection-start-line="149" selection-end-line="149" />
+        <state relative-caret-position="1598">
+          <caret line="94" column="11" selection-start-line="94" selection-start-column="6" selection-end-line="94" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/api/ThingApi.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="12" column="40" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/kotlin/it/heptartle/kbgg/api/ThingApiTest.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="58" selection-start-line="23" selection-start-column="58" selection-end-line="23" selection-end-column="58" />
+          <folding>
+            <element signature="e#31#112#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/kotlin/it/heptartle/kbgg/api/ImagesApiTest.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="22" column="56" selection-start-line="22" selection-start-column="56" selection-end-line="22" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build_release.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="489">
+          <caret line="61" column="16" selection-start-line="61" selection-start-column="16" selection-end-line="61" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
         </state>
       </provider>
     </entry>
