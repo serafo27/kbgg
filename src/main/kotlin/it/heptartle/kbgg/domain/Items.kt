@@ -32,39 +32,145 @@ class Item {
     @field:ElementList(name = "name", inline = true, required = false)
     var names: List<Name>? = null
 
-    @field:Element(required = false)
-    var yearpublished: YearPublished? = null
+    @field:Attribute(name="value", required = false)
+    @field:Path("./yearpublished")
+    var yearpublished: String? = null
 
-    @field:Element(required = false)
-    var image: Image? = null
+    @field:Text(required = false)
+    @field:Path("./image")
+    var image: String? = null
 
     @field:Element(required = false)
     var description: String? = null
 
-    @field:Element(required = false)
-    var minplayers: MinPlayers? = null
+    @field:Attribute(name = "value", required = false)
+    @field:Path("./minplayers")
+    var minplayers: Int? = null
 
-    @field:Element(required = false)
-    var maxplayers: MaxPlayers? = null
+    @field:Attribute(name="value", required = false)
+    @field:Path("./maxplayers")
+    var maxplayers: Int? = null
 
-    @field:Element(required = false)
-    var playingtime: PlayingTime? = null
+    @field:Attribute(name="value", required = false)
+    @field:Path("./playingtime")
+    var playingtime: Int? = null
 
-    @field:Element(required = false)
-    var minplaytime: MinPlayTime? = null
+    @field:Attribute(name="value", required = false)
+    @field:Path("./minplaytime")
+    var minplaytime: Int? = null
 
-    @field:Element(required = false)
-    var maxplaytime: MaxPlayTime? = null
+    @field:Attribute(name="value", required = false)
+    @field:Path("./maxplaytime")
+    var maxplaytime: Int? = null
 
-    @field:Element(required = false)
-    var minage: MinAge? = null
+    @field:Attribute(name="value", required = false)
+    @field:Path("./minage")
+    var minage: Int? = null
 
     @field:ElementList(name = "poll", inline = true, required = false)
     var polls: List<Poll>? = null
 
     @field:ElementList(name = "link", inline = true, required = false)
     var links: List<Link>? = null
+
+    @field:Element(required = false)
+    var statistics: Statistics? = null
 }
+
+@Root(name = "statistics")
+class Statistics {
+
+    @field:Attribute
+    var page: Int  = 0
+
+    @field:Element
+    var ratings: Ratings = Ratings()
+}
+
+@Root(name = "ratings")
+class Ratings {
+
+    @field:Attribute(name = "value")
+    @field:Path("./usersrated")
+    var usersrated: String = ""
+
+    @field:Attribute(name = "value")
+    @field:Path("./average")
+    var average: String = ""
+
+    @field:Attribute(name = "value")
+    @field:Path("./bayesaverage")
+    var bayesaverage: String = ""
+
+    @field:Attribute(name = "value")
+    @field:Path("./stddev")
+    var stddev: String = ""
+
+    @field:Attribute(name = "value")
+    @field:Path("./median")
+    var median: String = ""
+
+    @field:Attribute(name = "value")
+    @field:Path("./owned")
+    var owned: String = ""
+
+    @field:Attribute(name = "value")
+    @field:Path("./trading")
+    var trading: String = ""
+
+    @field:Attribute(name = "value")
+    @field:Path("./wanting")
+    var wanting: String = ""
+
+    @field:Attribute(name = "value")
+    @field:Path("./wishing")
+    var wishing: String = ""
+
+    @field:Attribute(name = "value")
+    @field:Path("./numcomments")
+    var numcomments: String = ""
+
+    @field:Attribute(name = "value")
+    @field:Path("./numweights")
+    var numweights: String = ""
+
+    @field:Attribute(name = "value")
+    @field:Path("./averageweight")
+    var averageweight: String = ""
+
+    @field:Element
+    var ranks: Ranks = Ranks()
+}
+
+@Root(name = "ranks")
+class Ranks {
+
+    @field:ElementList(name = "ranks", inline = true, required = false)
+    var rankList: List<Rank>? = null
+}
+
+@Root(name = "rank")
+class Rank {
+
+    @field:Attribute
+    var type: String = ""
+
+    @field:Attribute
+    var id: Int = 0
+
+    @field:Attribute
+    var name: String = ""
+
+    @field:Attribute
+    var friendlyname: String = ""
+
+    @field:Attribute
+    var value: Int = 0
+
+    @field:Attribute
+    var bayesaverage: String = ""
+}
+
 
 @Root(name = "link")
 class Link {
@@ -79,47 +185,6 @@ class Link {
     var value: String = ""
 }
 
-@Root(name = "minplayes")
-class MinPlayers {
-
-    @field:Attribute
-    var value: String = ""
-}
-
-@Root(name = "maxplayes")
-class MaxPlayers {
-
-    @field:Attribute
-    var value: String = ""
-}
-
-@Root(name = "playingtime")
-class PlayingTime {
-
-    @field:Attribute
-    var value: String = ""
-}
-
-@Root(name = "minplaytime")
-class MinPlayTime {
-
-    @field:Attribute
-    var value: String = ""
-}
-
-@Root(name = "maxplaytime")
-class MaxPlayTime {
-
-    @field:Attribute
-    var value: String = ""
-}
-
-@Root(name = "minage")
-class MinAge {
-
-    @field:Attribute
-    var value: String = ""
-}
 
 @Root(name = "poll")
 class Poll {
@@ -175,12 +240,6 @@ class Name {
 
 }
 
-@Root(name = "image")
-class Image {
-
-    @field:Text
-    var text: String = ""
-}
 
 @Root(name = "thumbnail")
 class Thumbnail {
@@ -191,11 +250,6 @@ class Thumbnail {
     var text: String? = null
 }
 
-@Root(name = "yearpublished")
-class YearPublished {
-    @field:Attribute
-    var value: String = ""
-}
 
 enum class Type(val value: String) {
     BOARDGAME("boardgame"),

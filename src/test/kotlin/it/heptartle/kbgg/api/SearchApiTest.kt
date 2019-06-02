@@ -22,7 +22,7 @@ class SearchApiTest {
         assertEquals(null, response.items!![0].rank)
         assertEquals(Type.BOARDGAME.value, response.items!![0].type)
         assertEquals(null, response.items!![0].thumbnail)
-        assertEquals("2016", response.items!![0].yearpublished!!.value)
+        assertEquals("2016", response.items!![0].yearpublished)
     }
 
 }

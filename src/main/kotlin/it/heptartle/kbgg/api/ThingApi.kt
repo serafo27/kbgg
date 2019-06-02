@@ -8,6 +8,8 @@ import retrofit2.http.Query
 interface ThingApi {
 
     @GET("thing")
-    fun getThing(@Query("id") thingId: Int): Call<Items>
+    fun getThing(@Query("id") thingId: Int,
+                 @Query("stats") stats: Int = 0
+    ): Call<Items>
 
 }

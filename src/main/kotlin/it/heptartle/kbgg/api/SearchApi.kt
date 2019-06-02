@@ -10,6 +10,6 @@ interface SearchApi {
     @GET("search")
     fun search(@Query("query") query: String,
                @Query("type") type: Type? = null,
-               @Query("exact") exact: Int? = null
+               @Query("exact") exact: Int = 0
     ): Call<Items>
 }
