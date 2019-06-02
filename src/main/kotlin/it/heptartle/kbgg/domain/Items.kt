@@ -225,6 +225,9 @@ class Link {
 
     @field:Attribute
     var value: String = ""
+
+    @field:Attribute
+    var inbound: String = ""
 }
 
 
