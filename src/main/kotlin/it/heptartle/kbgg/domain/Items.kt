@@ -36,6 +36,10 @@ class Item {
     @field:Path("./yearpublished")
     var yearpublished: String? = null
 
+    @field:Attribute(name="value", required = false)
+    @field:Path("./seriescode")
+    var seriescode: String? = null
+
     @field:Text(required = false)
     @field:Path("./image")
     var image: String? = null
