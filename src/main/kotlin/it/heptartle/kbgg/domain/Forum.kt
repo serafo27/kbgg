@@ -5,7 +5,7 @@ import org.simpleframework.xml.Element
 import org.simpleframework.xml.ElementList
 import org.simpleframework.xml.Root
 
-@Root(name = "items")
+@Root(name = "items", strict = false)
 class Forum {
     @field:Element
     var threads: Threads = Threads()
@@ -32,13 +32,13 @@ class Forum {
     var termsofuse: String = ""
 }
 
-@Root(name = "threads")
+@Root(name = "threads", strict = false)
 class Threads {
     @field:ElementList(name="thread", inline = true, required = false)
     var threadList: List<Thread>? = null
 }
 
-@Root(name = "thread")
+@Root(name = "thread", strict = false)
 class Thread {
     @field:Attribute
     var id: String = ""

@@ -2,7 +2,7 @@ package it.heptartle.kbgg.domain
 
 import org.simpleframework.xml.*
 
-@Root(name = "items")
+@Root(name = "items", strict = false)
 class Items {
     @field:ElementList(name="item", inline = true, required = false)
     var items: List<Item>? = null
@@ -14,7 +14,7 @@ class Items {
     var total: Int? = null
 }
 
-@Root(name = "item")
+@Root(name = "item", strict = false)
 class Item {
 
     @field:Attribute
@@ -85,7 +85,7 @@ class Item {
 
 }
 
-@Root(name = "videos")
+@Root(name = "videos", strict = false)
 class Videos {
 
     @field:ElementList(name = "video", inline = true, required = false)
@@ -95,7 +95,7 @@ class Videos {
     var total: Int = 0
 }
 
-@Root(name = "video")
+@Root(name = "video", strict = false)
 class Video {
 
     @field:Attribute
@@ -123,7 +123,7 @@ class Video {
     var postdate: String = ""
 }
 
-@Root(name = "statistics")
+@Root(name = "statistics", strict = false)
 class Statistics {
 
     @field:Attribute
@@ -133,7 +133,7 @@ class Statistics {
     var ratings: Ratings = Ratings()
 }
 
-@Root(name = "ratings")
+@Root(name = "ratings", strict = false)
 class Ratings {
 
     @field:Attribute(name = "value")
@@ -188,14 +188,14 @@ class Ratings {
     var ranks: Ranks = Ranks()
 }
 
-@Root(name = "ranks")
+@Root(name = "ranks", strict = false)
 class Ranks {
 
     @field:ElementList(name = "ranks", inline = true, required = false)
     var rankList: List<Rank>? = null
 }
 
-@Root(name = "rank")
+@Root(name = "rank", strict = false)
 class Rank {
 
     @field:Attribute
@@ -218,7 +218,7 @@ class Rank {
 }
 
 
-@Root(name = "link")
+@Root(name = "link", strict = false)
 class Link {
 
     @field:Attribute
@@ -235,7 +235,7 @@ class Link {
 }
 
 
-@Root(name = "poll")
+@Root(name = "poll", strict = false)
 class Poll {
 
     @field:Attribute
@@ -251,7 +251,7 @@ class Poll {
     var resultsList: List<Results>? = null
 }
 
-@Root(name = "results")
+@Root(name = "results", strict = false)
 class Results {
 
     @field:Attribute(required = false)
@@ -262,7 +262,7 @@ class Results {
 
 }
 
-@Root(name = "result")
+@Root(name = "result", strict = false)
 class Result {
 
     @field:Attribute
@@ -276,7 +276,7 @@ class Result {
 }
 
 
-@Root(name = "name")
+@Root(name = "name", strict = false)
 class Name {
     @field:Attribute
     var value: String = ""
@@ -290,7 +290,7 @@ class Name {
 }
 
 
-@Root(name = "thumbnail")
+@Root(name = "thumbnail", strict = false)
 class Thumbnail {
     @field:Attribute(required = false)
     var value: String? = null

@@ -3,7 +3,7 @@ package it.heptartle.kbgg.domain
 import org.simpleframework.xml.*
 
 
-@Root(name = "thread")
+@Root(name = "thread", strict = false)
 class ThreadDetail {
 
     @field:Element
@@ -27,7 +27,7 @@ class ThreadDetail {
 
 }
 
-@Root(name = "articles")
+@Root(name = "articles", strict = false)
 class Articles {
 
     @field:ElementList(name="article", inline = true, required = false)
@@ -35,7 +35,7 @@ class Articles {
 
 }
 
-@Root(name = "article")
+@Root(name = "article", strict = false)
 class Article {
 
     @field:Attribute
