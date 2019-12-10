@@ -15,7 +15,7 @@ class SearchApiTest {
 
         val response = service.search("a feast for odin").execute().body()
         checkNotNull(response)
-        assertEquals(7, response.total)
+        assertEquals(9, response.total)
         assertNotEquals(0, response.items)
         assertEquals(177736, response.items!![0].id)
         assertEquals("A Feast for Odin", response.items!![0].names!![0].value)

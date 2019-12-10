@@ -4,9 +4,12 @@ plugins {
 }
 
 group 'it.heptartle'
-version '1.0.8'
+version '1.0.10'
 
+apply plugin: 'java'
+apply plugin: 'maven'
 repositories {
+    mavenLocal()
     mavenCentral()
 }
 
@@ -30,3 +33,6 @@ compileKotlin {
 compileTestKotlin {
     kotlinOptions.jvmTarget = "1.8"
 }
+
+
+// gradle install
