@@ -315,6 +315,23 @@ enum class Type(val value: String) {
     }
 }
 
+enum class SearchType(val value: String) {
+    RPGITEM("rpgitem"),
+    VIDEOGAME("videogame"),
+    BOARDGAME("boardgame"),
+    BOARDGAMEACCESSORY("boardgameaccessory"),
+    BOARDGAMEEXPANSION("boardgameexpansion");
+
+    override fun toString(): String{
+        return value
+    }
+}
+
+class SearchTypes(private val types: List<SearchType>) {
+    override fun toString() = types.joinToString(",")
+}
+
+
 enum class ExactResult(val value:Int?) {
     TRUE(1),
     FALSE(null)

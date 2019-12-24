@@ -38,22 +38,22 @@ class Articles {
 @Root(name = "article", strict = false)
 class Article {
 
-    @field:Attribute
+    @field:Attribute(required = false)
     var id : String = ""
 
-    @field:Attribute
+    @field:Attribute(required = false)
     var username : String = ""
 
-    @field:Attribute
+    @field:Attribute(required = false)
     var link : String = ""
 
-    @field:Attribute
+    @field:Attribute(required = false)
     var postdate : String = ""
 
-    @field:Attribute
+    @field:Attribute(required = false)
     var editdate : String = ""
 
-    @field:Attribute
+    @field:Attribute(required = false)
     var numedits : String = ""
 
     @field:Text(required = false)
