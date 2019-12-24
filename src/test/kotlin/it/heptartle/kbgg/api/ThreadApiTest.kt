@@ -9,7 +9,7 @@ class ThreadApiTest {
 
     @Test
     fun retrieveThread() {
-        val response = service.getThread(2224684).execute().body()
+        val response = service.getThread("2224684").execute().body()
         checkNotNull(response)
     }
 
