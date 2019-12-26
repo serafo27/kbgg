@@ -25,4 +25,9 @@ class ThingApiTest {
         checkNotNull(response)
     }
 
+    @Test
+    fun retrieveThingWithMarketplace() {
+        val response = service.getThing("199561", marketplace = 1).execute().body()
+        checkNotNull(response)
+    }
 }

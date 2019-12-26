@@ -78,12 +78,62 @@ class Item {
     var links: List<Link>? = null
 
     @field:Element(required = false)
+    var marketplacelistings: Marketplace? = null
+
+    @field:Element(required = false)
     var videos: Videos? = null
 
     @field:Element(required = false)
     var statistics: Statistics? = null
 
 }
+
+@Root(name = "marketplacelistings", strict = false)
+class Marketplace {
+
+    @field:ElementList(name = "listing", inline = true, required = false)
+    var listings: List<Listing>? = null
+
+
+}
+
+@Root(name = "listing", strict = false)
+class Listing {
+
+    @field:Attribute(name = "value")
+    @field:Path("./listdate")
+    var listdate: String = ""
+
+    @field:Element
+    var price: Price = Price()
+
+    @field:Attribute(name = "value")
+    @field:Path("./condition")
+    var condition: String = ""
+
+    @field:Attribute(name = "value")
+    @field:Path("./notes")
+    var notes: String = ""
+
+    @field:Attribute(name = "href")
+    @field:Path("./link")
+    var linkUrl: String = ""
+
+    @field:Attribute(name = "title")
+    @field:Path("./link")
+    var linkTitle: String = ""
+}
+
+
+@Root(name = "price", strict = false)
+class Price {
+    @field:Attribute
+    var currency: String = ""
+
+    @field:Attribute
+    var value: String = ""
+}
+
 
 @Root(name = "videos", strict = false)
 class Videos {

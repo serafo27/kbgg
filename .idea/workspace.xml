@@ -8,15 +8,8 @@
   <component name="ChangeListManager">
     <list default="true" id="31bf290e-e88e-4365-8723-024b31fafe37" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/api/SearchApi.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/api/SearchApi.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/api/ThingApi.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/api/ThingApi.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/api/ThreadApi.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/api/ThreadApi.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/domain/Items.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/domain/Items.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/domain/ThreadDetail.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/domain/ThreadDetail.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/it/heptartle/kbgg/api/SearchApiTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/it/heptartle/kbgg/api/SearchApiTest.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/kotlin/it/heptartle/kbgg/api/ThingApiTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/it/heptartle/kbgg/api/ThingApiTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/it/heptartle/kbgg/api/ThreadApiTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/it/heptartle/kbgg/api/ThreadApiTest.kt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -287,7 +280,7 @@
       <workItem from="1575965613663" duration="668000" />
       <workItem from="1576229661649" duration="589000" />
       <workItem from="1577038263959" duration="3786000" />
-      <workItem from="1577204443219" duration="475000" />
+      <workItem from="1577204443219" duration="2239000" />
     </task>
     <task id="LOCAL-00001" summary="changed settings">
       <created>1558441054494</created>
@@ -373,7 +366,21 @@
       <option name="project" value="LOCAL" />
       <updated>1575965655878</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="fix">
+      <created>1577205037727</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1577205037727</updated>
+    </task>
+    <task id="LOCAL-00014" summary="fix">
+      <created>1577205105136</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1577205105136</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -406,6 +413,17 @@
     <MESSAGE value="not unknown field will be skipped" />
     <MESSAGE value="fix" />
     <option name="LAST_COMMIT_MESSAGE" value="fix" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/test/kotlin/it/heptartle/kbgg/api/ThingApiTest.kt</url>
+          <line>30</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="masterDetails">
     <states>
