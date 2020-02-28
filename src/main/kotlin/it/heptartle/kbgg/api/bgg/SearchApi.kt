@@ -1,7 +1,7 @@
-package it.heptartle.kbgg.api
+package it.heptartle.kbgg.api.bgg
 
-import it.heptartle.kbgg.domain.Items
-import it.heptartle.kbgg.domain.SearchTypes
+import it.heptartle.kbgg.domain.bgg.Items
+import it.heptartle.kbgg.domain.bgg.SearchTypes
 import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Query

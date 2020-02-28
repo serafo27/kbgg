@@ -1,11 +1,11 @@
-package it.heptartle.kbgg.api
+package it.heptartle.kbgg.api.geekdo
 
-import it.heptartle.kbgg.factory.ServiceFactory
+import it.heptartle.kbgg.factory.GeekdoServiceFactory
 import org.junit.jupiter.api.Assertions.assertEquals
 
 class ImagesApiTest {
 
-    private val service = ServiceFactory.getImageService()
+    private val service = GeekdoServiceFactory.getImageService()
 
     @org.junit.jupiter.api.Test
     fun retrieveImage() {

@@ -1,11 +1,11 @@
-package it.heptartle.kbgg.api
+package it.heptartle.kbgg.api.bgg
 
-import it.heptartle.kbgg.factory.ServiceFactory
+import it.heptartle.kbgg.factory.BggServiceFactory
 import org.junit.jupiter.api.Test
 
 class ForumApiTest {
 
-    private val service = ServiceFactory.getForumService()
+    private val service = BggServiceFactory.getForumService()
 
     @Test
     fun retrieveForum() {

@@ -1,4 +1,4 @@
-package it.heptartle.kbgg.domain
+package it.heptartle.kbgg.domain.bgg
 
 import org.simpleframework.xml.Attribute
 import org.simpleframework.xml.Element
@@ -8,7 +8,8 @@ import org.simpleframework.xml.Root
 @Root(name = "items", strict = false)
 class Forum {
     @field:Element
-    var threads: Threads = Threads()
+    var threads: Threads =
+        Threads()
 
     @field:Attribute
     var id: String = ""

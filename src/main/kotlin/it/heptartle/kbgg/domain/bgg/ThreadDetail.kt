@@ -1,4 +1,4 @@
-package it.heptartle.kbgg.domain
+package it.heptartle.kbgg.domain.bgg
 
 import org.simpleframework.xml.*
 
@@ -7,7 +7,8 @@ import org.simpleframework.xml.*
 class ThreadDetail {
 
     @field:Element
-    var articles: Articles = Articles()
+    var articles: Articles =
+        Articles()
 
     @field:Attribute
     var id : String = ""

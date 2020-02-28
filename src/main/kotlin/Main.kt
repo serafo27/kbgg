@@ -1,10 +1,10 @@
 
-import it.heptartle.kbgg.factory.ServiceFactory
+import it.heptartle.kbgg.factory.BggServiceFactory
 
 
 fun main() {
 
-    val service = ServiceFactory.getSearchService()
+    val service = BggServiceFactory.getSearchService()
     val body = service.search("feast for odin").execute().body()
     println(body!!)
 

@@ -1,11 +1,11 @@
-package it.heptartle.kbgg.api
+package it.heptartle.kbgg.api.bgg
 
-import it.heptartle.kbgg.factory.ServiceFactory
+import it.heptartle.kbgg.factory.BggServiceFactory
 import org.junit.jupiter.api.Test
 
-class ItemsApiTest {
+class HotApiTest {
 
-    private val service = ServiceFactory.getItemsService()
+    private val service = BggServiceFactory.getItemsService()
 
     @Test
     fun retrieveHotItems() {

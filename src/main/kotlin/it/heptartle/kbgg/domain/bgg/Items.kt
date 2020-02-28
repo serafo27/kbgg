@@ -1,4 +1,4 @@
-package it.heptartle.kbgg.domain
+package it.heptartle.kbgg.domain.bgg
 
 import org.simpleframework.xml.*
 
@@ -105,7 +105,8 @@ class Listing {
     var listdate: String = ""
 
     @field:Element
-    var price: Price = Price()
+    var price: Price =
+        Price()
 
     @field:Attribute(name = "value")
     @field:Path("./condition")
@@ -180,7 +181,8 @@ class Statistics {
     var page: Int  = 0
 
     @field:Element
-    var ratings: Ratings = Ratings()
+    var ratings: Ratings =
+        Ratings()
 }
 
 @Root(name = "ratings", strict = false)
@@ -235,7 +237,8 @@ class Ratings {
     var averageweight: String = ""
 
     @field:Element
-    var ranks: Ranks = Ranks()
+    var ranks: Ranks =
+        Ranks()
 }
 
 @Root(name = "ranks", strict = false)

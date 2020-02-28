@@ -1,21 +1,28 @@
-package it.heptartle.kbgg.api
+package it.heptartle.kbgg.api.bgg
 
-import it.heptartle.kbgg.domain.SearchType
-import it.heptartle.kbgg.domain.SearchTypes
-import it.heptartle.kbgg.domain.Type
-import it.heptartle.kbgg.factory.ServiceFactory
+import it.heptartle.kbgg.domain.bgg.SearchType
+import it.heptartle.kbgg.domain.bgg.SearchTypes
+import it.heptartle.kbgg.domain.bgg.Type
+import it.heptartle.kbgg.factory.BggServiceFactory
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Assertions.assertNotEquals
 import org.junit.jupiter.api.Test
 
 class SearchApiTest {
 
-    private val service = ServiceFactory.getSearchService()
+    private val service = BggServiceFactory.getSearchService()
 
     @Test
     fun name() {
 
-        val response = service.search("a feast for odin", SearchTypes(listOf(SearchType.BOARDGAME, SearchType.BOARDGAMEEXPANSION))).execute().body()
+        val response = service.search("a feast for odin",
+            SearchTypes(
+                listOf(
+                    SearchType.BOARDGAME,
+                    SearchType.BOARDGAMEEXPANSION
+                )
+            )
+        ).execute().body()
         checkNotNull(response)
         assertEquals(9, response.total)
         assertNotEquals(0, response.items)

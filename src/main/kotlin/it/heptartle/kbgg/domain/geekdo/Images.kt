@@ -1,7 +1,8 @@
-package it.heptartle.kbgg.domain
+package it.heptartle.kbgg.domain.geekdo
 
 data class Images (val images: List<ImageInfo>,
-                   val config: Config)
+                   val config: Config
+)
 
 data class ImageInfo (val imageid:String,
                       val imageurl_lg: String,
@@ -9,12 +10,15 @@ data class ImageInfo (val imageid:String,
                       val caption:String,
                       val numrecommend:String,
                       val numcomments:String,
-                      val user:User,
+                      val user: User,
                       val imageurl:String)
 
 data class User (val username:String,
                  val avatar:String,
-                 val avatarfile:String)
+                 val avatarfile:String,
+                 val avatarurl_md:String?,
+                 val textreviewcount:Int?,
+                 val videoreviewcount:Int?)
 
 data class Config (val sorttypes:List<Prop>,
                    val numitems:Int,

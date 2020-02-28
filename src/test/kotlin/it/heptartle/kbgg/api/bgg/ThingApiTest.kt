@@ -1,11 +1,11 @@
-package it.heptartle.kbgg.api
+package it.heptartle.kbgg.api.bgg
 
-import it.heptartle.kbgg.factory.ServiceFactory
+import it.heptartle.kbgg.factory.BggServiceFactory
 import org.junit.jupiter.api.Test
 
 class ThingApiTest {
 
-    private val service = ServiceFactory.getThingService()
+    private val service = BggServiceFactory.getThingService()
 
     @Test
     fun retrieveThing() {

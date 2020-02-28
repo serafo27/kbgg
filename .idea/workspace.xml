@@ -7,9 +7,42 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="31bf290e-e88e-4365-8723-024b31fafe37" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/api/geekdo/FilesApi.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/api/geekdo/GeekItemsApi.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/api/geekdo/HottestApi.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/api/geekdo/RecommendationsApi.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/api/geekdo/ReviewsApi.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/domain/geekdo/Files.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/domain/geekdo/GeekItem.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/domain/geekdo/Hottest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/domain/geekdo/ObjectType.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/domain/geekdo/Recommendations.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/domain/geekdo/Reviews.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/factory/GeekdoServiceFactory.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/it/heptartle/kbgg/api/geekdo/FilesApiTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/it/heptartle/kbgg/api/geekdo/GeelItemsApiTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/it/heptartle/kbgg/api/geekdo/HottestApiTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/it/heptartle/kbgg/api/geekdo/RecommendationsApiTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/it/heptartle/kbgg/api/geekdo/ReviewsApiTest.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/domain/Items.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/domain/Items.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/it/heptartle/kbgg/api/ThingApiTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/it/heptartle/kbgg/api/ThingApiTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/api/ForumApi.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/api/bgg/ForumApi.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/api/ImagesApi.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/api/geekdo/ImagesApi.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/api/ItemsApi.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/api/bgg/HotApi.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/api/SearchApi.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/api/bgg/SearchApi.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/api/ThingApi.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/api/bgg/ThingApi.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/api/ThreadApi.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/api/bgg/ThreadApi.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/domain/Forum.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/domain/bgg/Forum.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/domain/Images.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/domain/geekdo/Images.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/domain/Items.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/domain/bgg/Items.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/domain/ThreadDetail.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/domain/bgg/ThreadDetail.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/factory/ServiceFactory.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/factory/BggServiceFactory.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/it/heptartle/kbgg/api/ForumApiTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/it/heptartle/kbgg/api/bgg/ForumApiTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/it/heptartle/kbgg/api/ImagesApiTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/it/heptartle/kbgg/api/geekdo/ImagesApiTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/it/heptartle/kbgg/api/ItemsApiTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/it/heptartle/kbgg/api/bgg/HotApiTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/it/heptartle/kbgg/api/SearchApiTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/it/heptartle/kbgg/api/bgg/SearchApiTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/it/heptartle/kbgg/api/ThingApiTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/it/heptartle/kbgg/api/bgg/ThingApiTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/it/heptartle/kbgg/api/ThreadApiTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/it/heptartle/kbgg/api/bgg/ThreadApiTest.kt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -74,6 +107,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin Interface" />
+        <option value="Kotlin Enum" />
         <option value="Kotlin File" />
       </list>
     </option>
@@ -104,11 +138,19 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/domain/geekdo" />
+      <recent name="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/domain/bgg" />
+    </key>
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="it.heptartle.kbgg.api.geekdo" />
+      <recent name="it.heptartle.kbgg.api.bgg" />
       <recent name="domain" />
       <recent name="api" />
     </key>
     <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="it.heptartle.kbgg.api.geekdo" />
+      <recent name="it.heptartle.kbgg.factory" />
       <recent name="it.heptartle.kbgg.api" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -127,7 +169,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ThingApiTest">
+  <component name="RunManager" selected="JUnit.GeelItemsApiTest.retrieveFiles">
     <configuration default="true" type="AndroidJUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -135,101 +177,93 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="kbgg [install]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="install" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="kbgg [publishToMavenLocal]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="publishToMavenLocal" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="kbgg [uploadArchives]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="uploadArchives" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="SearchApiTest.name" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DesignerApiTest.retrieveRecommendations" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="kbgg.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="it.heptartle.kbgg.api.*" />
+          <option name="PATTERN" value="it.heptartle.kbgg.api.geekdo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="it.heptartle.kbgg.api" />
-      <option name="MAIN_CLASS_NAME" value="it.heptartle.kbgg.api.SearchApiTest" />
-      <option name="METHOD_NAME" value="name" />
+      <option name="PACKAGE_NAME" value="it.heptartle.kbgg.api.geekdo" />
+      <option name="MAIN_CLASS_NAME" value="it.heptartle.kbgg.api.geekdo.DesignerApiTest" />
+      <option name="METHOD_NAME" value="retrieveRecommendations" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ThingApiTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FilesApiTest.retrieveImage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="kbgg.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="it.heptartle.kbgg.api.*" />
+          <option name="PATTERN" value="it.heptartle.kbgg.api.geekdo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="it.heptartle.kbgg.api" />
-      <option name="MAIN_CLASS_NAME" value="it.heptartle.kbgg.api.ThingApiTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="it.heptartle.kbgg.api.geekdo" />
+      <option name="MAIN_CLASS_NAME" value="it.heptartle.kbgg.api.geekdo.FilesApiTest" />
+      <option name="METHOD_NAME" value="retrieveImage" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GeelItemsApiTest.retrieveFiles" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="kbgg.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="it.heptartle.kbgg.api.geekdo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="it.heptartle.kbgg.api.geekdo" />
+      <option name="MAIN_CLASS_NAME" value="it.heptartle.kbgg.api.geekdo.GeelItemsApiTest" />
+      <option name="METHOD_NAME" value="retrieveFiles" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RecommendationsApiTest.retrieveImage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="kbgg.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="it.heptartle.kbgg.api.geekdo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="it.heptartle.kbgg.api.geekdo" />
+      <option name="MAIN_CLASS_NAME" value="it.heptartle.kbgg.api.geekdo.RecommendationsApiTest" />
+      <option name="METHOD_NAME" value="retrieveImage" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReviewsApiTest.retrieveImage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="kbgg.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="it.heptartle.kbgg.api.geekdo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="it.heptartle.kbgg.api.geekdo" />
+      <option name="MAIN_CLASS_NAME" value="it.heptartle.kbgg.api.geekdo.ReviewsApiTest" />
+      <option name="METHOD_NAME" value="retrieveImage" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ThingApiTest" />
-        <item itemvalue="JUnit.SearchApiTest.name" />
-        <item itemvalue="Gradle.kbgg [uploadArchives]" />
-        <item itemvalue="Gradle.kbgg [install]" />
-        <item itemvalue="Gradle.kbgg [publishToMavenLocal]" />
+        <item itemvalue="JUnit.GeelItemsApiTest.retrieveFiles" />
+        <item itemvalue="JUnit.DesignerApiTest.retrieveRecommendations" />
+        <item itemvalue="JUnit.FilesApiTest.retrieveImage" />
+        <item itemvalue="JUnit.RecommendationsApiTest.retrieveImage" />
+        <item itemvalue="JUnit.ReviewsApiTest.retrieveImage" />
       </list>
     </recent_temporary>
   </component>
@@ -280,7 +314,9 @@
       <workItem from="1575965613663" duration="668000" />
       <workItem from="1576229661649" duration="589000" />
       <workItem from="1577038263959" duration="3786000" />
-      <workItem from="1577204443219" duration="2239000" />
+      <workItem from="1577204443219" duration="2970000" />
+      <workItem from="1578068555168" duration="1670000" />
+      <workItem from="1582905230756" duration="6743000" />
     </task>
     <task id="LOCAL-00001" summary="changed settings">
       <created>1558441054494</created>
@@ -380,7 +416,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577205105136</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="added marketplace thing">
+      <created>1577378568121</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1577378568121</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -412,15 +455,21 @@
     <MESSAGE value="add seriescode in Item object" />
     <MESSAGE value="not unknown field will be skipped" />
     <MESSAGE value="fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix" />
+    <MESSAGE value="added marketplace thing" />
+    <option name="LAST_COMMIT_MESSAGE" value="added marketplace thing" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/test/kotlin/it/heptartle/kbgg/api/ThingApiTest.kt</url>
-          <line>30</line>
-          <option name="timeStamp" value="1" />
+          <url>file://$PROJECT_DIR$/src/test/kotlin/it/heptartle/kbgg/api/geekdo/FilesApiTest.kt</url>
+          <line>13</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/test/kotlin/it/heptartle/kbgg/api/geekdo/GeelItemsApiTest.kt</url>
+          <line>14</line>
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

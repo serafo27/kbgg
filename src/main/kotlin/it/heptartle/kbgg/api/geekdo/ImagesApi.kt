@@ -1,6 +1,6 @@
-package it.heptartle.kbgg.api
+package it.heptartle.kbgg.api.geekdo
 
-import it.heptartle.kbgg.domain.Images
+import it.heptartle.kbgg.domain.geekdo.Images
 import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Query

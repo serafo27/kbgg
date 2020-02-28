@@ -1,11 +1,11 @@
-package it.heptartle.kbgg.api
+package it.heptartle.kbgg.api.bgg
 
-import it.heptartle.kbgg.factory.ServiceFactory
+import it.heptartle.kbgg.factory.BggServiceFactory
 import org.junit.jupiter.api.Test
 
 class ThreadApiTest {
 
-    private val service = ServiceFactory.getThreadService()
+    private val service = BggServiceFactory.getThreadService()
 
     @Test
     fun retrieveThread() {
