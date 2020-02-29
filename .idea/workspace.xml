@@ -6,7 +6,11 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="31bf290e-e88e-4365-8723-024b31fafe37" name="Default Changelist" comment="" />
+    <list default="true" id="31bf290e-e88e-4365-8723-024b31fafe37" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/domain/geekdo/GeekItem.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/domain/geekdo/GeekItem.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/domain/geekdo/ObjectType.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/domain/geekdo/ObjectType.kt" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -279,7 +283,7 @@
       <workItem from="1577038263959" duration="3786000" />
       <workItem from="1577204443219" duration="2970000" />
       <workItem from="1578068555168" duration="1670000" />
-      <workItem from="1582905230756" duration="6999000" />
+      <workItem from="1582905230756" duration="8812000" />
     </task>
     <task id="LOCAL-00001" summary="changed settings">
       <created>1558441054494</created>
@@ -393,7 +397,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582912298961</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="travis ci config">
+      <created>1582912627043</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1582912627043</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -427,7 +438,8 @@
     <MESSAGE value="fix" />
     <MESSAGE value="added marketplace thing" />
     <MESSAGE value="Repackaged api and added new ones for geekdo" />
-    <option name="LAST_COMMIT_MESSAGE" value="Repackaged api and added new ones for geekdo" />
+    <MESSAGE value="travis ci config" />
+    <option name="LAST_COMMIT_MESSAGE" value="travis ci config" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
