@@ -30,7 +30,7 @@ data class RecommendationItem(
 
 data class ImageSets(val square100: RecommendationImage)
 
-data class RecommendationImage(val src: String, val `src@2x`: String)
+data class RecommendationImage(val src: String)
 
 data class Descriptors(val name: String,
                        val displayValue: String)

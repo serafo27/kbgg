@@ -9,18 +9,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="31bf290e-e88e-4365-8723-024b31fafe37" name="Default Changelist" comment="Added new geek item">
-      <change afterPath="$PROJECT_DIR$/.idea/kbgg.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/api/bgg/LoginApi.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/domain/bgg/Credentials.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/factory/BggLoginServiceFactory.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/it/heptartle/kbgg/api/bgg/LoginApiTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="31bf290e-e88e-4365-8723-024b31fafe37" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/kbgg.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/kbgg.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/domain/geekdo/Recommendations.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/domain/geekdo/Recommendations.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/it/heptartle/kbgg/api/geekdo/RecommendationsApiTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/it/heptartle/kbgg/api/geekdo/RecommendationsApiTest.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +50,23 @@
         </task>
         <projects_view>
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="kbgg" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="kbgg" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="kbgg" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="other" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>
@@ -124,7 +133,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.RecommendationsApiTest.retrieveRecommendations">
+  <component name="RunManager" selected="Gradle.kbgg [install]">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -136,21 +145,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DesignerApiTest.retrieveRecommendations" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="kbgg.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="it.heptartle.kbgg.api.geekdo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="it.heptartle.kbgg.api.geekdo" />
-      <option name="MAIN_CLASS_NAME" value="it.heptartle.kbgg.api.geekdo.DesignerApiTest" />
-      <option name="METHOD_NAME" value="retrieveRecommendations" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="kbgg [install]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="install" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
     </configuration>
     <configuration name="GeelItemsApiTest.retrieveFiles" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="kbgg.test" />
@@ -217,11 +231,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.kbgg [install]" />
         <item itemvalue="JUnit.RecommendationsApiTest.retrieveRecommendations" />
         <item itemvalue="JUnit.RecommendationsApiTest" />
         <item itemvalue="JUnit.LoginApiTest.retrieveForum" />
         <item itemvalue="JUnit.GeelItemsApiTest.retrieveFiles" />
-        <item itemvalue="JUnit.DesignerApiTest.retrieveRecommendations" />
       </list>
     </recent_temporary>
   </component>
@@ -269,7 +283,7 @@
       <workItem from="1578068555168" duration="1670000" />
       <workItem from="1582905230756" duration="11456000" />
       <workItem from="1611220927435" duration="180000" />
-      <workItem from="1617349945947" duration="941000" />
+      <workItem from="1617349945947" duration="1435000" />
     </task>
     <task id="LOCAL-00001" summary="changed settings">
       <created>1558441054494</created>
@@ -397,7 +411,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582978915427</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Changed Recommendations contract">
+      <created>1617350972786</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1617350972787</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -432,7 +453,8 @@
     <MESSAGE value="Repackaged api and added new ones for geekdo" />
     <MESSAGE value="travis ci config" />
     <MESSAGE value="Added new geek item" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added new geek item" />
+    <MESSAGE value="Changed Recommendations contract" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed Recommendations contract" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -446,11 +468,6 @@
           <url>file://$PROJECT_DIR$/src/test/kotlin/it/heptartle/kbgg/api/bgg/LoginApiTest.kt</url>
           <line>15</line>
           <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/test/kotlin/it/heptartle/kbgg/api/geekdo/RecommendationsApiTest.kt</url>
-          <line>13</line>
-          <option name="timeStamp" value="20" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
