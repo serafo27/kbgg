@@ -10,7 +10,7 @@ class RecommendationsApiTest {
     @org.junit.jupiter.api.Test
     fun retrieveRecommendations() {
 
-        val response = service.getRecommendations(177736).execute().body()
+        val response = service.getRecommendations(291572).execute().body()
         checkNotNull(response)
     }
 }

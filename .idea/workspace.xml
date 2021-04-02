@@ -5,13 +5,23 @@
       <artifact name="kbgg-lib" />
     </artifacts-to-build>
   </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="31bf290e-e88e-4365-8723-024b31fafe37" name="Default Changelist" comment="">
+    <list default="true" id="31bf290e-e88e-4365-8723-024b31fafe37" name="Default Changelist" comment="Added new geek item">
+      <change afterPath="$PROJECT_DIR$/.idea/kbgg.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/api/bgg/LoginApi.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/domain/bgg/Credentials.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/factory/BggLoginServiceFactory.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/it/heptartle/kbgg/api/bgg/LoginApiTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/domain/geekdo/GeekItem.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/domain/geekdo/GeekItem.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/domain/geekdo/ObjectType.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/domain/geekdo/ObjectType.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/domain/geekdo/Recommendations.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/domain/geekdo/Recommendations.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/it/heptartle/kbgg/api/geekdo/RecommendationsApiTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/it/heptartle/kbgg/api/geekdo/RecommendationsApiTest.kt" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,23 +57,7 @@
         </task>
         <projects_view>
           <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="kbgg" type="f1a62948:ProjectNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="kbgg" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="kbgg" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="verification" type="c8890929:TasksNode$1" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </tree_state>
         </projects_view>
@@ -76,6 +70,7 @@
         <option value="Kotlin Interface" />
         <option value="Kotlin Enum" />
         <option value="Kotlin File" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
@@ -86,6 +81,10 @@
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1UeiAvyynZ6wI2B7yGmBdzwY41m" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.Annotations" value="false" />
@@ -116,30 +115,23 @@
       <recent name="api" />
     </key>
     <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
-      <recent name="it.heptartle.kbgg.api.geekdo" />
+      <recent name="it.heptartle.kbgg.api.bgg" />
       <recent name="it.heptartle.kbgg.factory" />
+      <recent name="it.heptartle.kbgg.api.geekdo" />
       <recent name="it.heptartle.kbgg.api" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="JUnit.GeelItemsApiTest.retrieveFiles">
-    <configuration default="true" type="AndroidJUnit">
+  <component name="RunManager" selected="JUnit.RecommendationsApiTest.retrieveRecommendations">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
       <option name="TEST_OBJECT" value="class" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -155,22 +147,6 @@
       <option name="PACKAGE_NAME" value="it.heptartle.kbgg.api.geekdo" />
       <option name="MAIN_CLASS_NAME" value="it.heptartle.kbgg.api.geekdo.DesignerApiTest" />
       <option name="METHOD_NAME" value="retrieveRecommendations" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FilesApiTest.retrieveImage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="kbgg.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="it.heptartle.kbgg.api.geekdo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="it.heptartle.kbgg.api.geekdo" />
-      <option name="MAIN_CLASS_NAME" value="it.heptartle.kbgg.api.geekdo.FilesApiTest" />
-      <option name="METHOD_NAME" value="retrieveImage" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -192,7 +168,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RecommendationsApiTest.retrieveImage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginApiTest.retrieveForum" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="kbgg.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="it.heptartle.kbgg.api.bgg.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="it.heptartle.kbgg.api.bgg" />
+      <option name="MAIN_CLASS_NAME" value="it.heptartle.kbgg.api.bgg.LoginApiTest" />
+      <option name="METHOD_NAME" value="retrieveForum" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RecommendationsApiTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="kbgg.test" />
       <extension name="coverage">
         <pattern>
@@ -202,13 +194,12 @@
       </extension>
       <option name="PACKAGE_NAME" value="it.heptartle.kbgg.api.geekdo" />
       <option name="MAIN_CLASS_NAME" value="it.heptartle.kbgg.api.geekdo.RecommendationsApiTest" />
-      <option name="METHOD_NAME" value="retrieveImage" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReviewsApiTest.retrieveImage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RecommendationsApiTest.retrieveRecommendations" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="kbgg.test" />
       <extension name="coverage">
         <pattern>
@@ -217,8 +208,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="it.heptartle.kbgg.api.geekdo" />
-      <option name="MAIN_CLASS_NAME" value="it.heptartle.kbgg.api.geekdo.ReviewsApiTest" />
-      <option name="METHOD_NAME" value="retrieveImage" />
+      <option name="MAIN_CLASS_NAME" value="it.heptartle.kbgg.api.geekdo.RecommendationsApiTest" />
+      <option name="METHOD_NAME" value="retrieveRecommendations" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -226,22 +217,15 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RecommendationsApiTest.retrieveRecommendations" />
+        <item itemvalue="JUnit.RecommendationsApiTest" />
+        <item itemvalue="JUnit.LoginApiTest.retrieveForum" />
         <item itemvalue="JUnit.GeelItemsApiTest.retrieveFiles" />
         <item itemvalue="JUnit.DesignerApiTest.retrieveRecommendations" />
-        <item itemvalue="JUnit.FilesApiTest.retrieveImage" />
-        <item itemvalue="JUnit.RecommendationsApiTest.retrieveImage" />
-        <item itemvalue="JUnit.ReviewsApiTest.retrieveImage" />
       </list>
     </recent_temporary>
   </component>
-  <component name="SbtLocalSettings">
-    <option name="projectSyncType">
-      <map>
-        <entry key="$USER_HOME$/Workspace/Functional/fp-workshop" value="PREVIEW" />
-        <entry key="$USER_HOME$/Workspace/Functional/lastminute-fp-workshop" value="PREVIEW" />
-      </map>
-    </option>
-  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -283,7 +267,9 @@
       <workItem from="1577038263959" duration="3786000" />
       <workItem from="1577204443219" duration="2970000" />
       <workItem from="1578068555168" duration="1670000" />
-      <workItem from="1582905230756" duration="8812000" />
+      <workItem from="1582905230756" duration="11456000" />
+      <workItem from="1611220927435" duration="180000" />
+      <workItem from="1617349945947" duration="941000" />
     </task>
     <task id="LOCAL-00001" summary="changed settings">
       <created>1558441054494</created>
@@ -404,24 +390,30 @@
       <option name="project" value="LOCAL" />
       <updated>1582912627043</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Added new geek item">
+      <created>1582978915427</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1582978915427</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
@@ -439,7 +431,8 @@
     <MESSAGE value="added marketplace thing" />
     <MESSAGE value="Repackaged api and added new ones for geekdo" />
     <MESSAGE value="travis ci config" />
-    <option name="LAST_COMMIT_MESSAGE" value="travis ci config" />
+    <MESSAGE value="Added new geek item" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added new geek item" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -448,6 +441,16 @@
           <url>file://$PROJECT_DIR$/src/test/kotlin/it/heptartle/kbgg/api/geekdo/FilesApiTest.kt</url>
           <line>13</line>
           <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/test/kotlin/it/heptartle/kbgg/api/bgg/LoginApiTest.kt</url>
+          <line>15</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/test/kotlin/it/heptartle/kbgg/api/geekdo/RecommendationsApiTest.kt</url>
+          <line>13</line>
+          <option name="timeStamp" value="20" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

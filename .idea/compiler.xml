@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
-    <bytecodeTargetLevel>
+    <bytecodeTargetLevel target="1.8">
       <module name="_io.github.serafo27.kbgg.main" target="1.8" />
       <module name="_io.github.serafo27.kbgg.test" target="1.8" />
       <module name="it.heptar.kbgg.main" target="1.8" />
