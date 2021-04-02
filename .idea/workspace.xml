@@ -13,7 +13,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/kbgg.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/kbgg.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/domain/geekdo/Recommendations.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/it/heptartle/kbgg/domain/geekdo/Recommendations.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +64,18 @@
                 <item name="kbgg" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="other" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="kbgg" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="publishing" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="kbgg" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="upload" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -133,7 +144,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.kbgg [install]">
+  <component name="RunManager" selected="Gradle.kbgg [uploadArchives]">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -166,37 +177,47 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="GeelItemsApiTest.retrieveFiles" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="kbgg.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="it.heptartle.kbgg.api.geekdo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="it.heptartle.kbgg.api.geekdo" />
-      <option name="MAIN_CLASS_NAME" value="it.heptartle.kbgg.api.geekdo.GeelItemsApiTest" />
-      <option name="METHOD_NAME" value="retrieveFiles" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="kbgg [publish]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="publish" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
     </configuration>
-    <configuration name="LoginApiTest.retrieveForum" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="kbgg.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="it.heptartle.kbgg.api.bgg.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="it.heptartle.kbgg.api.bgg" />
-      <option name="MAIN_CLASS_NAME" value="it.heptartle.kbgg.api.bgg.LoginApiTest" />
-      <option name="METHOD_NAME" value="retrieveForum" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="kbgg [uploadArchives]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="uploadArchives" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
     </configuration>
     <configuration name="RecommendationsApiTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="kbgg.test" />
@@ -231,11 +252,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.kbgg [uploadArchives]" />
+        <item itemvalue="Gradle.kbgg [publish]" />
         <item itemvalue="Gradle.kbgg [install]" />
         <item itemvalue="JUnit.RecommendationsApiTest.retrieveRecommendations" />
         <item itemvalue="JUnit.RecommendationsApiTest" />
-        <item itemvalue="JUnit.LoginApiTest.retrieveForum" />
-        <item itemvalue="JUnit.GeelItemsApiTest.retrieveFiles" />
       </list>
     </recent_temporary>
   </component>
@@ -283,7 +304,7 @@
       <workItem from="1578068555168" duration="1670000" />
       <workItem from="1582905230756" duration="11456000" />
       <workItem from="1611220927435" duration="180000" />
-      <workItem from="1617349945947" duration="1435000" />
+      <workItem from="1617349945947" duration="2156000" />
     </task>
     <task id="LOCAL-00001" summary="changed settings">
       <created>1558441054494</created>
@@ -418,7 +439,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617350972787</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="removed field">
+      <created>1617351426520</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1617351426520</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -454,7 +482,8 @@
     <MESSAGE value="travis ci config" />
     <MESSAGE value="Added new geek item" />
     <MESSAGE value="Changed Recommendations contract" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed Recommendations contract" />
+    <MESSAGE value="removed field" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed field" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
